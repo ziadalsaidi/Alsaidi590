@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفع عربون - معرض الصعيدي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header {
+            background-color: #2a3d4d;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2a3d4d;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+        }
+        .payment-details {
+            font-size: 18px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-details strong {
+            color: #2a3d4d;
+        }
+        .payment-form input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .payment-form button {
+            background-color: #2a3d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .payment-form button:hover {
+            background-color: #1a2a35;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>دفع عربون - معرض الصعيدي</h1>
+    </header>
+
+    <div class="container">
+        <h2>مرحبا بك في معرض الصعيدي!</h2>
+        <div class="content">
+            <p>لإتمام عملية الدفع عبر فودافون كاش، يمكنك إرسال المبلغ إلى الرقم التالي:</p>
+            <div class="payment-details">
+                <p><strong>رقم المحفظة: 01032092547</strong></p>
+                <p>يرجى إرسال المبلغ المحدد كعربون على هذا الرقم.</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h3>إتمام الدفع:</h3>
+            <form class="payment-form" action="your-server-endpoint" method="POST">
+                <input type="text" name="name" placeholder="اسمك" required>
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                <input type="number" name="amount" placeholder="المبلغ المدفوع" required>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
